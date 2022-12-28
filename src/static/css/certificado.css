@@ -1,0 +1,80 @@
+body{
+    margin: 0 4em;
+}
+h2{
+    font-size: 1em;
+}
+span{
+    font-weight: 100;
+}
+.box_1,.box_2,.box_3,.box_5,.box_6{
+    border-radius: 20px;
+    border: solid 1.5px;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+}
+.box_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.h2_doc{
+    margin-left: 15em;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    padding: 0.4em;
+}
+.column_table{
+    font-weight: bold;
+    margin-left: 8em;
+}
+td{
+    text-align: center;
+}
+th{
+    background-color: rgb(224, 224, 224);
+}
+.th_2{
+    padding: 0.8em;
+}
+.box_8,.box_7{
+    padding-left: 1em;
+    margin-top: 4em;
+}
+.box_9{
+    margin-top: 10em;
+    padding-left: 1em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+/* Footer*/
+.form_registro{
+    display: grid;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+label{
+    font-style: italic;
+    margin-right: 1em;
+    font-weight: bold;
+}
+input, select{
+    border-radius: 10px;
+}
+.box_div{
+    margin: 0.3em 0;
+}
+.boton_enviar{
+    margin-top: 1em;
+}

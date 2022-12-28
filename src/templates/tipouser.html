@@ -1,0 +1,22 @@
+
+{% extends 'layout.html' %} 
+{% block title %} Tipo de Usuario {% endblock %}
+
+{% block content %}
+<div class="grid_tipouser">
+    <h1>¿Quién eres?</h1>
+    <div class="option_user">
+        <a href="/login" type="button">
+            <img src="{{url_for('static', filename='images/doctor.jpg')}}" alt="Personal Medico">
+        </a>
+        <h2>Personal Médico</h2>
+    </div>
+    <div class="option_user">
+        <a href="#">
+            <img src="{{url_for('static', filename='images/paciente.jpg')}}" alt="Paciente">
+        </a>
+        <h2>Paciente</h2>
+    </div>
+</div>
+
+{% endblock %}

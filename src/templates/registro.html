@@ -1,0 +1,96 @@
+{% extends 'layout.html' %} 
+{% block title %} Registro {% endblock %}
+
+{% block content %}
+
+<div class="registro">
+    <h1 class="title_registro" style="text-align: center;">Ingrese los datos de la prueba</h1>
+    <form class="form_registro" action="/registro" method="POST">
+        <div class="box_div">
+            <label for="nombre">Nombres</label>
+            <input type="text" id="nombre" name="nombre" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="tipo_documento">Tipo de Documento</label>
+            <select name="tipo_documento" id="tipo_documento" required>
+                <option value="DNI">DNI</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Carnet">Carnet de Extranjeria</option>
+            </select>
+        </div>
+        <div class="box_div"> 
+            <label for="nro_documento">Numero de Documento</label>
+            <input type="text" maxlength="8" class="form_input" name="nro_documento" name="nro_documento" required>
+        </div>
+        <div class="box_div">
+            <label for="direccion">Dirección/Ubicación</label>
+            <input type="text" id="direccion" name="direccion" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="lugar_muestra">Lugar de Muestra</label>
+            <input type="text" id="lugar_muestra" name="lugar_muestra" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="tipo_muestra">Tipo de Muestra</label>
+            <select name="tipo_muestra" id="tipo_muestra" required>
+                <option value="Antigena">Antigena</option>
+                <option value="Molecular">Molecular</option>
+            </select>
+        </div>
+        <div class="box_div">
+            <label for="fecha_obtencion">Fecha de Obtención</label>
+            <input type="date" id="fecha_obtencion" name="fecha_obtencion" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="fecha_resultado">Fecha de Resultado</label>
+            <input type="date" id="fecha_resultado" name="fecha_resultado" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="analisis">Análisis</label>
+            <input type="text" id="analisis" name="analisis" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="metodo">Método</label>
+            <input type="text" id="metodo" name="metodo" class="form_input" required>
+        </div>
+        <div class="box_div">
+            <label for="resultado">Resultado</label>
+            <select name="resultado" id="resultado" required>
+                <option value="Reactivo">Reactivo</option>
+                <option value="No Reactivo">No Reactivo</option>
+            </select>
+        </div>
+        <div class="box_div">
+            <label for="decision_clinica">Valores de decision clínica</label>
+            <input type="textarea" id="decision_clinica" name="decision_clinica" class="form_input">
+        </div>
+        <div class="box_div">
+            <label for="rango_referencia">Rango de Referencia</label>
+            <input type="textarea" id="rango_referencia" name="rango_referencia" class="form_input">
+        </div>
+        <button class="boton_enviar w-100 btn btn-lg btn-primary" type="submit">Registrar Prueba</button>
+    </form>
+    <div>
+        <img src="{{url_for('static', filename='images/cover_registro.png')}}" alt="Cover Registro">
+        <a class="button_registro btn btn-outline-primary btn-lg" href="/categoria">Volver</a>
+    </div>
+</div>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <br />
+        {% for message in messages %}
+        <div class="alert alert-primary alert-dismissible" role="alert">
+            <strong class="boton_imprimir">{{ message }}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"> </button>
+            <hr>
+            <a class="boton_imprimir w-25 btn btn-lg btn-primary" href="{{ url_for('static',filename='Resultado.pdf')}}" target="_blank">Imprimir</a>
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+{% endblock %}

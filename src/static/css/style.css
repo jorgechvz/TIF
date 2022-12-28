@@ -1,0 +1,226 @@
+/* Media Queries */
+@media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}  
+
+/* Navbar */
+.image_logo{
+  width: 25%;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+/* footer */
+footer{
+  margin: 0 125px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Login Page */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.form-signin {
+  max-width: 380px;
+  padding: 0;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.label_login{
+  font-weight: 400;
+}
+/* Registro Page */
+
+.registro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.registro img{
+  width: 100%;
+  display: grid;
+  
+}
+.button_registro{
+  float: right;
+  margin-right: 5em;
+  margin-top: 4.5em;
+}
+.form_registro{
+  display: grid;
+  justify-content: center;
+  margin-top: 2.5em;
+}
+label{
+  font-style: italic;
+  margin-right: 1em;
+  font-weight: bold;
+}
+input{
+  padding-left: 0.5em;
+}
+input, select{
+  border-radius: 10px;
+}
+.box_div{
+  margin: 0.3em 0;
+}
+.boton_enviar{
+  margin-top: 1em;
+}
+.boton_imprimir{
+  margin-top: 1em;
+  margin-left: 6.5em;
+}
+.title_registro{
+  grid-column: 1/3;
+}
+
+/* Pagina Tipo de usuario */
+.grid_tipouser{
+  margin: 5em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+}
+
+.grid_tipouser h1{
+  grid-column: 1/3;
+  padding: 1em 0;
+}
+.option_user img{
+  border-radius: 50%;
+  width: 50%;
+}
+.option_user h2{
+  font-weight: 400;
+}
+
+/* Page Table */
+
+.table{
+  width: 90%;
+  margin: 3em;
+  margin-left: 4em;
+}
+.flex_lista{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* print page */
+
+.button_print{
+  margin-left: 1em;
+  margin-bottom: 7.5em;
+  margin-top: 7.5em;
+}
+.print_principal{
+  margin-left: 5em;
+}
+

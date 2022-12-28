@@ -1,0 +1,10 @@
+
+{% extends 'layout.html' %} 
+{% block title %} Registro {% endblock %}
+
+{% block content %}
+
+<a  class="print_principal button_print btn btn-primary btn-lg" href="{{ url_for('static',filename='Resultado.pdf')}}" target="_blank">Haga click para imprimir</a>
+<a  class="button_print btn btn-primary btn-lg" href="/lista_pacientes">Volver</a>
+
+{% endblock %}

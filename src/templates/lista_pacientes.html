@@ -1,0 +1,39 @@
+{% extends 'layout.html' %} 
+{% block title %} Lista Pacientes {% endblock %}
+
+{% block content %}
+<div class="flex_lista">
+    <h1 style="text-align: center;">Lista de Pacientes</h1>
+    <a class="btn btn-outline-primary btn-lg" href="/categoria">Volver</a>
+</div>
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+            <th>Fecha de Prueba</th>
+            <th>Resultado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pacientes in pacientes %}
+        <tr>
+            <td>{{pacientes.idpacientes}}</td>
+            <td>{{pacientes.nombres}}</td>
+            <td>{{pacientes.apellidos}}</td>
+            <td>{{pacientes.nro_documento}}</td>
+            <td>{{pacientes.fecha_resultado}}</td>
+            <td>{{pacientes.resultado}}</td>
+            <td><a href="/imprimir/{{pacientes.idpacientes}}">Imprimir</a> | <a href='/destroy/{{pacientes.idpacientes}}'>Eliminar</a></td>
+        </tr> 
+        {% endfor %}
+      
+    </tbody>
+</table>
+
+
+
+{% endblock %}
